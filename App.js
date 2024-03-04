@@ -1,9 +1,19 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
-//React.createElement=>ReactElemet-JS Object=> HTMLElement(render)
-const heading=React.createElement("h1",{
-    id:"heading"
-},"Hello world react 😀");
-const newHeading=<h1 className="heading">Hello world react JSX😀</h1>
+//ReactElement
+const heading=<h1>I'm React Element</h1>;
+const Heading=()=>(
+    <div>
+        <h2>I'm functional component
+    </h2></div>
+)
+const HeadingTwo=()=>{
+    return(
+        <>
+        <Heading/>
+        <div>Composite Component</div>
+        <h3>Hello world react JSX😀</h3>
+    </>)
+}
 const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(newHeading);
+root.render(<HeadingTwo/>);
