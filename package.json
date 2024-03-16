@@ -1,7 +1,8 @@
 {
-  "name": "reactnamastejs",
+  "name": "fReshMaRT",
   "version": "1.0.0",
-  "description": "react tutorial namastedev",
+  "description": "grocery deliver app landing page",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
@@ -9,17 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shefalisawant/reactTutorial.git"
+    "url": "git+https://github.com/shefalisawant/fReshMaRT.git"
   },
   "keywords": [
     "none"
   ],
   "author": "shefali sawant",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shefalisawant/reactTutorial/issues"
-  },
-  "homepage": "https://github.com/shefalisawant/reactTutorial#readme",
+  "homepage": "https://github.com/shefalisawant/fReshMaRT#readme",
   "devDependencies": {
     "parcel": "^2.12.0",
     "postcss": "^8.4.35",
