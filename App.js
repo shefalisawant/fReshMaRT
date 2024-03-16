@@ -1,19 +1,17 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
-//ReactElement
-const heading=<h1>I'm React Element</h1>;
-const Heading=()=>(
-    <div>
-        <h2>I'm functional component
-    </h2></div>
-)
-const HeadingTwo=()=>{
+import Layout from "./src/Layout";
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
+import { PATHS } from "./routes";
+const App=()=>{
     return(
-        <>
-        <Heading/>
-        <div>Composite Component</div>
-        <h3>Hello world react JSX😀</h3>
-    </>)
+       <Routes> 
+          <Route path ={PATHS.HOME} element= {<Layout />}/> 
+          <Route path ={PATHS.ABOUT} element= {<Layout />}/> 
+          <Route path ={PATHS.CATEGORIES} element= {<Layout />}/> 
+          <Route path ={PATHS.CONTACT} element= {<Layout />}/>
+          <Route path ={PATHS.PARTNER} element= {<Layout />}/> 
+       </Routes> )
 }
 const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingTwo/>);
+root.render(<Router> <App/></Router> );
